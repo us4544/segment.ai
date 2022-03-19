@@ -32,7 +32,7 @@ __COCO_INSTANCE_CATEGORY_NAMES__ = [
 
 html_temp_2 = '''
     <div style = "padding-bottom: 20px; padding-top: 20px; padding-left: 20px; padding-right: 20px">      
-    <center><h2>Fruit Classifier</h2></center>
+    <center><h2>Instance Segmentation</h2></center>
     </div>
     '''
 st.markdown(html_temp_2, unsafe_allow_html=True)
@@ -59,9 +59,8 @@ try:
         st.image(img, width = 300, caption = 'Uploaded Image')
         if st.button('Predict'):
             model = torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)
-            image = Image.open('/test.jpg')
-            ins_seg = instance_segmentation.InstanceSegmentation(model, image) #calling the instance segmentation class to run inference on the model
-            ouptput_image = ins_seg.instance_segmentation()
-            st.image(ouptput_image)
+            ins_seg = instance_segmentation.InstanceSegmentation(model, img) #calling the instance segmentation class to run inference on the model
+            ouptput_img = ins_seg.instance_segmentation()
+            st.image(ouptput_img)
 except:
     pass
