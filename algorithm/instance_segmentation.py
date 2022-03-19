@@ -81,11 +81,3 @@ class InstanceSegmentation(object):
             img1.rectangle([(boxes[i][0]),(boxes[i][1])], outline ="red", width=1)
 
         return img
-
-## Usage ##
-
-#if __name__ == "__main__":        
-#    model = torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)
-#    image = Image.open('test.jpeg')
-#    ins_seg = InstanceSegmentation(model, image)
-#    ins_seg.instance_segmentation()
