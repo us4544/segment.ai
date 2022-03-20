@@ -21,21 +21,23 @@ Mask R-CNN extends Faster R-CNN by adding a branch for predicting an object mask
 ![image](https://user-images.githubusercontent.com/66861243/159152504-857e8e0c-362f-43aa-aefd-6d028cfb0865.png)
 
 ## Installation and Quick Start
-   ```
-   git clone https://github.com/us4544/DL_Project   
-   ```   
 
-   ```
-   cd DL_Project
-   ```
+- Setting up the Python Environment with dependencies:
 
-   ```
-   pip install virtualenv
-   python -m venv env
-   source env/bin/activate
-   pip install -r requirements.txt
-   ```
+        pip install -r requirements.txt
 
-   ```
-   streamlit run main.py
-   ```
+- Cloning the Repository: 
+
+        git clone https://github.com/us4544/DL_Project 
+- Entering the directory: 
+
+        cd DL_Project
+- Running the file:
+
+        pip install virtualenv
+        python -m venv env
+        source env/bin/activate
+        pip install -r requirements.txt
+        streamlit run main.py
+        
+<hr>
