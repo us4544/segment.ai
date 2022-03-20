@@ -12,7 +12,7 @@ import time
 import urllib
 from PIL import Image, ImageDraw
 
-from algorithm import instance_segmentation
+from algorithm import *
 
 # defining the instance segmentattion class
 __COCO_INSTANCE_CATEGORY_NAMES__ = [
@@ -57,10 +57,10 @@ if select == 'Upload image from device':
 try:
     if img is not None:
         st.image(img, width = 300, caption = 'Uploaded Image')
-        if st.button('Predict'):
+        if st.button('Segment'):
             model = torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)
-            ins_seg = instance_segmentation.InstanceSegmentation(model, img) #calling the instance segmentation class to run inference on the model
-            ouptput_img = ins_seg.instance_segmentation()
-            st.image(ouptput_img)
+            ins_seg = InstanceSegmentation(model, img) #calling the instance segmentation class to run inference on the model
+            output_img = ins_seg.instance_segmentation()
+            st.image(output_img)
 except:
     pass
