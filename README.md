@@ -28,10 +28,10 @@ Mask R-CNN extends Faster R-CNN by adding a branch for predicting an object mask
 
 - Cloning the Repository: 
 
-        git clone https://github.com/us4544/DL_Project 
+        git clone https://github.com/us4544/Segment.AI
 - Entering the directory: 
 
-        cd DL_Project
+        cd Segment.AI
 - Running the file:
 
         pip install virtualenv
