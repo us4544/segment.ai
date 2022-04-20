@@ -20,6 +20,9 @@ Mask R-CNN extends Faster R-CNN by adding a branch for predicting an object mask
 ### Results from original Mask RCNN Implementation by Facebook AI Research
 ![image](https://user-images.githubusercontent.com/66861243/159152504-857e8e0c-362f-43aa-aefd-6d028cfb0865.png)
 
+## Demo
+<img src = "results/results.png">
+
 ## Installation and Quick Start
 
 - Setting up the Python Environment with dependencies:
