@@ -11,6 +11,10 @@ Image segmentation creates a pixel-wise mask for each object in the image. This 
 ## Mask RCNN
 Mask R-CNN extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition. Mask R-CNN is simple to train and adds only a small overhead to Faster R-CNN, running at 5 fps. Mask R-CNN is easy to generalize to other tasks, e.g., allowing us to estimate human poses in the same framework.
 
+Semantic segmentation associates every pixel of an image with a class label such as a person, flower, car and so on. It treats multiple objects of the same class as a single entity. <br>
+In contrast, instance segmentation treats multiple objects of the same class as distinct individual instances. <br>
+For example, in the image shown below, Semantic Segmentation identifies all sheep as the same entity and gives them the same mask. However, Instance Segmentation treats each of the three sheep as different entities and gives them different colored masks.
+
 ### Network Architecture
 - A convolutional backbone architecture used for feature extraction over an entire image
 - A network head for bounding-box recognition (classification and regression) and mask prediction that is applied separately to each RoI.
