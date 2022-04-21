@@ -46,3 +46,8 @@ Mask R-CNN extends Faster R-CNN by adding a branch for predicting an object mask
         streamlit run main.py
         
 <hr>
+
+## Contributors
+- [Indira Dutta](https://github.com/indiradutta)
+- [Umang Shringi](https://github.com/us4544)
+- [Srijarko Roy](https://github.com/srijarkoroy)
