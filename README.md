@@ -25,16 +25,18 @@ Mask R-CNN extends Faster R-CNN by adding a branch for predicting an object mask
 
 ## Installation and Quick Start
 
+- Cloning the Repository: 
+
+        git clone https://github.com/us4544/segment.ai
+        
+- Entering the directory: 
+
+        cd segment.ai
+
 - Setting up the Python Environment with dependencies:
 
         pip install -r requirements.txt
 
-- Cloning the Repository: 
-
-        git clone https://github.com/us4544/Segment.AI
-- Entering the directory: 
-
-        cd Segment.AI
 - Running the file:
 
         pip install virtualenv
